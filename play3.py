@@ -7,38 +7,49 @@ end = 'years old! Check out their popular albums: '
 
 
 
+Rapper = {
+    'name': ['kanye', 'lil uzi vert']
+}
+
 Age = {
-    'name': ['kanye', 'lil uzi vert'],
-     'age': [44,22]
+    'kanye': 44,
+    'lil uzi vert': 23
 }
 
 
 Album = {
-    'lil uzi vert': ['luv is rage 2', 'eternal atake'], 
+    'lil uzi vert': ['luv is Rapper 2', 'eternal atake'], 
     'kanye': ['College Drop', 'Life of Pablo', 'Yeezus', 'Late Registration'],
 }
 
 
-# made user inut translate to lowercase for case sens purposes
-user = str(input("Enter a Rapper ").lower())
 
 
 
+import re
 
-# .values is what I was looking for
-def ageCheck():
-    # what can i put in the values parameter
-    # is there a way to only have print
+# dirct.values might be better?
+def RapperCheck():
+    
+    # while true means loop forever!
+         # made user inut translate to lowercase for case sens purposes
+        user = str(input("Enter a Rapper ").lower())
 
-  
-    if user in Age.get('name'):
-        print(Age['age'])
-    else:
-        print('sorry ' + "'" + user + "'" + ' is not in our Agebase! ')
+        if user in Rapper.get('name'):
+            
+            print('code works till here')
+
+            # i want it to only return the matching user input
+       
+
+            print (Rapper['name'])
+
+        else:
+            print('sorry ' + "'" + user + "'" + ' is not in our Rapperbase! ')
 
 
 #what can i add into these parameters?
-ageCheck()
+RapperCheck()
 
 
 
