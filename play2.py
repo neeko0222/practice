@@ -10,9 +10,10 @@ producers = {
 }
 
 
+
 # 
 
-
+#sets r cool!
 a = set('dela cruz')
 b = set('mendoza')
 
