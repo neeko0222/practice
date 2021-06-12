@@ -1,3 +1,5 @@
+end = 'years old'
+
 
 Goat = {
     
@@ -8,19 +10,21 @@ Goat = {
  
 }
 
-user = str(input())
-
-# print (Goat.get('age'))
-# print(Goat['age'])
+user = str(input("Enter a rapper ").lower())
 
 
 
+
+# to check if a value is in a dictionary if x in d.values()
 def ageCheck():
-    if user in Goat.values():
+    # what can i put in the values parameter?
 
+    if user in Goat.values():
+        print(' is about ')
         print(Goat['age'])
+        print(end)
     else:
-        print('sorry ' + user + ' is not in our database! ')
+        print('sorry ' + "'" + user + "'" + ' is not in our database! ')
 
 ageCheck()
 
