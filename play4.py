@@ -17,9 +17,5 @@ myFav = {
 
 # newList = {k: {**myFav.get(k, {}), **Goat.get(k,{})} for k in keys}
 
-# print(newList)
 
-
-
-print(newList)
 

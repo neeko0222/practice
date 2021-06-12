@@ -7,24 +7,20 @@ end = 'years old! Check out their popular albums: '
 
 
 
-Goat = {
+Age = {
     'name': ['kanye', 'lil uzi vert'],
-    'age': [44,22]
+     'age': [44,22]
 }
 
 
-Albums = {
-    'uzi': ['luv is rage 2', 'eternal atake'], 
+Album = {
+    'lil uzi vert': ['luv is rage 2', 'eternal atake'], 
     'kanye': ['College Drop', 'Life of Pablo', 'Yeezus', 'Late Registration'],
 }
 
-for k in Goat:
-    Goat[k].update(myFav.get(k, {}))
-print(Goat)
-
 
 # made user inut translate to lowercase for case sens purposes
-user = str(input("Enter a rapper ").lower())
+user = str(input("Enter a Rapper ").lower())
 
 
 
@@ -33,14 +29,12 @@ user = str(input("Enter a rapper ").lower())
 def ageCheck():
     # what can i put in the values parameter
     # is there a way to only have print
-    if user in Goat.values():
-        print('is about ')
-        print(Goat['age'])
-        print(end)
-        print(Goat['albums'])
 
+  
+    if user in Age.get('name'):
+        print(Age['age'])
     else:
-        print('sorry ' + "'" + user + "'" + ' is not in our Goatbase! ')
+        print('sorry ' + "'" + user + "'" + ' is not in our Agebase! ')
 
 
 #what can i add into these parameters?
