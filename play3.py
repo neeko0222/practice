@@ -28,13 +28,17 @@ def RapperCheck():
         user = str(input("Enter a Rapper ").lower())
     
         if user in Rapper.get('name'):
+               if user in Rapper.get('name'):
+
             
-            print('code works till here')
+                print(user)
+                
+
 
             # i want it to only return the matching user input
        
 
-            print (Rapper['name'])
+                # print (Rapper['name'])
 
         else:
             print('sorry ' + "'" + user + "'" + ' is not in our Rapperbase! ')
