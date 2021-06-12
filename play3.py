@@ -1,15 +1,26 @@
 
 end = 'years old! Check out their popular albums: '
 
+# what does this do?
+# from collections import defaultdict
+#how to merge two dictionaries! but is that ideal?
+
+
+
 Goat = {
-    'name': 'kanye',
-    'age': 44,
-    'albums': ['College Drop', 'Life of Pablo']
+    'name': ['kanye', 'lil uzi vert'],
+    'age': [44,22]
 }
 
 
+Albums = {
+    'uzi': ['luv is rage 2', 'eternal atake'], 
+    'kanye': ['College Drop', 'Life of Pablo', 'Yeezus', 'Late Registration'],
+}
 
-
+for k in Goat:
+    Goat[k].update(myFav.get(k, {}))
+print(Goat)
 
 
 # made user inut translate to lowercase for case sens purposes
@@ -29,7 +40,7 @@ def ageCheck():
         print(Goat['albums'])
 
     else:
-        print('sorry ' + "'" + user + "'" + ' is not in our database! ')
+        print('sorry ' + "'" + user + "'" + ' is not in our Goatbase! ')
 
 
 #what can i add into these parameters?
