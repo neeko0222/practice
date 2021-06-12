@@ -1,17 +1,28 @@
-old = 30
 
-Kanye = {
-    'name': 'Kanye',
-    'age': 22,
+Goat = {
+    
+    'name': 'kanye',
+    'age': 44,
     'albums': ['College Drop', 'Life of Pablo']
+
  
 }
 
-# user = str(input('Check Rapper Age '))
+user = str(input())
 
-print(Kanye['albums'][1])
+# print (Goat.get('age'))
+# print(Goat['age'])
 
 
+
+def ageCheck():
+    if user in Goat.values():
+
+        print(Goat['age'])
+    else:
+        print('sorry ' + user + ' is not in our database! ')
+
+ageCheck()
 
 
 
