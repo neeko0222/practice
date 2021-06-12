@@ -28,10 +28,12 @@ def RapperCheck():
         user = str(input("Enter a Rapper ").lower())
     
         if user in Rapper.get('name'):
-               if user in Rapper.get('name'):
 
-            
-                print(user)
+                # if user in Age.get(user):
+                    print(user)
+                    
+                    
+
                 
 
 
